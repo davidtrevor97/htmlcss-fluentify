@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+p{
+ color: #808080;
+}
 /* UTILITIES */
 .section{
   width: 100%;
@@ -24,10 +27,13 @@
 }
 .plan-div{
   float: left;
+  height: 100%;
   display: inline-block;
   width: calc(100% / 3);
   border: 1px solid black;
-  height: 200px;
+  text-align: center;
+  height: 380px;
+  padding: 20px 5px;
 }
 .level-div{
   float: left;
@@ -65,6 +71,12 @@
 .btn:hover{
   opacity: 70%;
   cursor: pointer;
+}
+.gray{
+  background-color: #d3d3d3;
+}
+.white{
+  background-color: white;
 }
 /* FINE UTILITIES */
 /* HEADER */
@@ -111,4 +123,32 @@ header{
   margin-bottom: 20px;
   color: white;
 }
-/* SECTION 2 */
+/* SECTION 1 TRADITIONAL */
+.traditional{
+  background-color: #d3d3d3;
+  padding: 30px;
+  text-align: center;
+  line-height: 30px;
+  vertical-align: middle;
+}
+.traditional h2{
+  color: black;
+}
+/* SECTION 2 PLAN */
+.plan-div img{
+  height: 100px;
+}
+.plan-div h3{
+  color: #7cbb02;
+  font-size: 26px;
+}
+.plan-div h3::after{
+  content: '';
+  display: block;
+  width: 40%;
+  height: 1px;
+  margin: 30px;
+  margin-left: 50%;
+  transform: translatex(-50%);
+  background-color: black;
+}
