@@ -7,6 +7,9 @@
 p{
  color: #808080;
 }
+h3{
+  font-size: 26px;
+}
 /* UTILITIES */
 .section{
   width: 100%;
@@ -22,7 +25,6 @@ p{
 }
 .container{
   width: 90%;
-  border: 1px solid black;
   margin:0 auto;
 }
 .plan-div{
@@ -30,7 +32,6 @@ p{
   height: 100%;
   display: inline-block;
   width: calc(100% / 3);
-  border: 1px solid black;
   text-align: center;
   height: 380px;
   padding: 20px 5px;
@@ -39,15 +40,14 @@ p{
   float: left;
   display: inline-block;
   width: calc(100% / 2);
-  border: 1px solid black;
-  height: 200px;
+  padding: 40px;
+  height: 540px;
 }
 .footer-div{
+  position: relative;
   float: left;
   display: inline-block;
   width: calc(100% / 2);
-  border: 1px solid black;
-  height: 200px;
 }
 .h-position{
   display: inline-block;
@@ -140,7 +140,6 @@ header{
 }
 .plan-div h3{
   color: #7cbb02;
-  font-size: 26px;
 }
 .plan-div h3::after{
   content: '';
@@ -151,4 +150,35 @@ header{
   margin-left: 50%;
   transform: translatex(-50%);
   background-color: black;
+}
+/* SECTION 3 LEVEL */
+.level-div h3,
+.level-div p,
+.level-div a{
+  margin-bottom: 20px;
+
+}
+/* FOOTER */
+.footer{
+  line-height: 120px;
+  vertical-align: middle;
+}
+.footer div:last-child{
+  text-align: right;
+}
+.footer-div span,
+.footer-div button{
+  margin-right: 20px;
+}
+.footer-div span{
+  color:#808080
+}
+#f-span{
+  border-bottom: 1px solid black;
+}
+.footer-div button:last-child{
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  right: 15%;
 }
