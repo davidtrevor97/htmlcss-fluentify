@@ -33,15 +33,18 @@ h3{
   display: inline-block;
   width: calc(100% / 3);
   text-align: center;
-  height: 380px;
-  padding: 20px 5px;
+  height: 400px;
+  padding: 50px 15px;
+  padding-bottom: 100px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #808080;
 }
 .level-div{
   float: left;
   display: inline-block;
   width: calc(100% / 2);
   padding: 40px;
-  height: 540px;
+  min-height: 540px;
 }
 .footer-div{
   position: relative;
@@ -87,6 +90,9 @@ header{
 
 .h-n-left{
   width: 10%;
+}
+.h-n-left img{
+  padding-top: 30px;
 }
 .h-n-central{
   text-align: right;
